@@ -19,7 +19,7 @@ type Story = StoryObj<typeof KeyStory>
 export const Letter: Story = {
   args: {
     letter: "A",
-    type: "letter"
+    type: "letter",
   },
 }
 

@@ -14,11 +14,12 @@ interface LetterProps {
 
 interface CommandProps {
   type: "enter" | "backspace"
+  letter?: never
 }
 
 type Props = LetterProps | CommandProps
 
-export const Key: FC<Props & { callback: () => void }> = (props) => {
+export const Key: FC<Props & { callback?: () => void }> = (props) => {
   const Component = (() => {
     switch (props.type) {
       case "letter":

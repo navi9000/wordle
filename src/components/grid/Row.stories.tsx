@@ -14,38 +14,38 @@ export default RowStory
 
 type Story = StoryObj<typeof RowStory>
 
-export const Empty: Story = { args: { letters: [] } }
+export const Empty: Story = { args: { row: 0 } }
 
-export const Active: Story = {
-  args: {
-    letters: [
-      { value: "A", type: "default" },
-      { value: "P", type: "default" },
-      { value: "P", type: "default" },
-    ],
-  },
-}
+// export const Active: Story = {
+//   args: {
+//     letters: [
+//       { value: "A", type: "default" },
+//       { value: "P", type: "default" },
+//       { value: "P", type: "default" },
+//     ],
+//   },
+// }
 
-export const Checked: Story = {
-  args: {
-    letters: [
-      { value: "A", type: "correct" },
-      { value: "P", type: "default" },
-      { value: "P", type: "default" },
-      { value: "L", type: "misplaced" },
-      { value: "E", type: "default" },
-    ],
-  },
-}
+// export const Checked: Story = {
+//   args: {
+//     letters: [
+//       { value: "A", type: "correct" },
+//       { value: "P", type: "default" },
+//       { value: "P", type: "default" },
+//       { value: "L", type: "misplaced" },
+//       { value: "E", type: "default" },
+//     ],
+//   },
+// }
 
-export const Correct: Story = {
-  args: {
-    letters: [
-      { value: "A", type: "correct" },
-      { value: "P", type: "correct" },
-      { value: "P", type: "correct" },
-      { value: "L", type: "correct" },
-      { value: "E", type: "correct" },
-    ],
-  },
-}
+// export const Correct: Story = {
+//   args: {
+//     letters: [
+//       { value: "A", type: "correct" },
+//       { value: "P", type: "correct" },
+//       { value: "P", type: "correct" },
+//       { value: "L", type: "correct" },
+//       { value: "E", type: "correct" },
+//     ],
+//   },
+// }
