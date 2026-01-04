@@ -1,0 +1,11 @@
+.row {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.255rem;
+  align-items: center;
+}

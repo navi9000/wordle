@@ -1,0 +1,35 @@
+.key {
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  border-radius: 5px;
+  width: max-content;
+  height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  line-height: 100%;
+  overflow: hidden;
+}
+
+.key_disabled {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.key_enter,
+.key_backspace {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.key svg,
+.key span {
+  font-size: 1rem;
+  margin: 0;
+  line-height: 100%;
+}
