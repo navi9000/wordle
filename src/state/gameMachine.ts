@@ -8,7 +8,7 @@ function assertEvent<TEvent extends EventObject, Type extends TEvent["type"]>(
   type: Type
 ): asserts ev is Extract<TEvent, { type: Type }> {
   if (ev.type !== type) {
-    throw new Error("Unexpected event type.")
+    throw new Error("Unexpected event type")
   }
 }
 
